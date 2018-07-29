@@ -1,0 +1,25 @@
+<h1>Language Dictionary</h1>
+
+
+<p *ngIf="!forecasts"><em>Loading...</em></p>
+<table class='table' *ngIf="forecasts">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>German </th>
+            <th>Tamil (F)</th>
+            <th>English</th>
+            <th>Description</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let forecast of forecasts">
+            <td>{{ forecast.id }}</td>
+            <td>{{ forecast.german }}</td>
+            <td>{{ forecast.tamil }}</td>
+            <td>{{ forecast.english }}</td>
+            <td>{{ forecast.description }}</td>
+        </tr>
+    </tbody>
+</table>
