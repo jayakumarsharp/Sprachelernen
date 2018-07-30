@@ -31,12 +31,12 @@ namespace GermanSprache.Controllers
         public void Save([FromBody] LanguageDictionaryM objLanguage)
         {
             //lst.Add(objLanguage);
-            using (var db = new LanguageDALContext())
-            {
-                var blog = new LanguageDictionary { English = objLanguage.English, German = objLanguage.German, Description = objLanguage.Description, Tamil = objLanguage.Tamil, LastUpdated = DateTime.Now };
-                db.LanguageDictionary.Add(blog);
-                db.SaveChanges();
-            }
+            //using (var db = new LanguageDALContext())
+            //{
+            //    var blog = new LanguageDictionary { English = objLanguage.English, German = objLanguage.German, Description = objLanguage.Description, Tamil = objLanguage.Tamil, LastUpdated = DateTime.Now };
+            //    db.LanguageDictionary.Add(blog);
+            //    db.SaveChanges();
+            //}
             insert(objLanguage);
         }
 

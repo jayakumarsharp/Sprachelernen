@@ -5,21 +5,23 @@
 <table class='table' *ngIf="forecasts">
     <thead>
         <tr>
-            <th>Id</th>
+
             <th>German </th>
             <th>Tamil (F)</th>
             <th>English</th>
             <th>Description</th>
+            <th>UpdatedOn</th>
 
         </tr>
     </thead>
     <tbody>
         <tr *ngFor="let forecast of forecasts">
-            <td>{{ forecast.id }}</td>
+
             <td>{{ forecast.german }}</td>
             <td>{{ forecast.tamil }}</td>
             <td>{{ forecast.english }}</td>
             <td>{{ forecast.description }}</td>
+            <td>{{ forecast.UpdatedOn }}</td>
         </tr>
     </tbody>
 </table>

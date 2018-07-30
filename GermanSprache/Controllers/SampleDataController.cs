@@ -34,7 +34,7 @@ namespace GermanSprache.Controllers
                 mongoDatabase = GetMongoDatabase();
                 //fetch the details from CustomerDB and pass into view  
                 var result = mongoDatabase.GetCollection<LanguageDictionaryM>("myCollection").Find(FilterDefinition<LanguageDictionaryM>.Empty).ToList();
-                var blogs = db.LanguageDictionary.ToList();
+               // var blogs = db.LanguageDictionary.ToList();
                 return result;
             }
         }
